@@ -1,0 +1,38 @@
+{
+  "author": "virjar",
+  "title": "Ratel文档",
+  "language": "zh-hans",
+  "links": {
+    "sidebar": {
+      "Home": "https://github.com/virjarRate"
+    }
+  },
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-share",
+    "expandable-chapters",
+    "chapter-fold",
+    "search-pro",
+    "tbfed-pagefooter",
+    "page-treeview",
+    "hide-element",
+    "popup"
+  ],
+  "pluginsConfig": {
+    "tbfed-pagefooter": {
+      "copyright": "© 2021 virjar, Made by iinti Co.Ltd",
+      "modify_label": "该文件最后修改时间: ",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "hide-element": {
+      "elements": [
+        ".treeview__container-title",
+        ".gitbook-link"
+      ]
+    }
+  },
+  "collapsible_menu": true,
+  "level_number": true,
+  "showLevel": true
+}

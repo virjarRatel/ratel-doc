@@ -11,7 +11,7 @@
 
 只需配置并安装SSHDroid插件，便可在本机上通过ssh命令直接登录设备，并任意访问目标app的私有data目录文件，或者scp拷贝文件，甚至如果通过内网穿透等将端口转发，还可以实现远程ssh。
 
-基于这个，我们还制作了[ratel-bakup-tools](https://github.com/virjarRatel/ratel-bakup-tools)的GUI工具，在windows/linux/mac上快速备份/还原应用data目录。
+基于这个，我们还制作了[ratel-bakup-tools](./bakup-tools.md)的GUI工具，在windows/linux/mac上快速备份/还原应用data目录。
 
 > PS：目前的shell命令交互展示还未进行优化
 
@@ -19,10 +19,10 @@
 
 1. 复制文件: ``app/src/main/assets/config.template.properties``-> `` app/src/main/assets/config.properties``
 2. 修改内容
-    - targetPackage: 需要被注入的进程
+    - targetPackage: 需要被注入的目标应用包名
     - ssdServerPort: 启动的端口号，请注意不要和其他服务冲突
     - newProcess: 是否需要在新进程中启动,如果你的app开启了平头哥的分身功能，并且想要访问data目录下的真实文件，那么请务必设置为true。
-3. 安装并运行插件
+3. 安装插件并在RatelManager中勾选插件，启动目标应用(不是启动SSHDroid插件APP)
 4. 在电脑上面运行** adb forward **,如： ``adb forward tcp:3478 tcp:3478``
 5. 使用电脑连接服务，如：
     - ssh 127.0.0.1 -p 3478 登陆shell

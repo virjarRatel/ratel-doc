@@ -8,3 +8,4 @@ Ratel用户文档
 * [后台服务器](03_backend/README.md)
 * [生态](04_ecology/README.md)
   * [SSHDroid](04_ecology/SSHdroid.md)
+  * [ratel-bakup-tools](04_ecology/bakup-tools.md)
